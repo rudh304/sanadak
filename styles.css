@@ -398,6 +398,12 @@ html[dir="ltr"] .critical-path li:not(:last-child)::after { content: "\f061"; }
   html[dir="ltr"] .g-row { grid-template-columns: 300px repeat(32, minmax(0, 1fr)); }
 }
 
+/* نبذة المملكة في الخاتمة */
+.ksa-note { margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, .25); }
+.ksa-note h3 { margin: 0 0 8px; color: #fff; }
+.ksa-sources { font-size: .86rem; color: #BFD3F5; }
+.ksa-sources a { color: #7FF0E0; }
+
 /* الطباعة */
 @media print {
   @page { size: A4; margin: 12mm; }
