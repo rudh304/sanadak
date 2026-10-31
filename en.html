@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sanadak Tech</title>
+  <meta name="description" content="Sanadak Tech: an applied project in information systems project management, following the PMI methodology.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B3D91'/%3E%3Cpath d='M8 19v-3a8 8 0 0 1 16 0v3' fill='none' stroke='%2314B8A6' stroke-width='3'/%3E%3Crect x='6' y='17' width='5' height='8' rx='2' fill='white'/%3E%3Crect x='21' y='17' width='5' height='8' rx='2' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/fonts/fonts.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var root = document.documentElement, saved = null;
+      root.classList.add('js');
+      try { saved = localStorage.getItem('theme'); } catch (e) {}
+      root.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    })();
+  </script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="#cover"><i class="fa-solid fa-headset" aria-hidden="true"></i><span>Sanadak Tech</span></a>
+    <nav id="main-nav" class="main-nav" aria-label="Site sections">
+      <a href="#cover"><i class="fa-solid fa-users" aria-hidden="true"></i>Team</a>
+      <a href="#idea"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i>Idea</a>
+      <a href="#charter"><i class="fa-solid fa-file-signature" aria-hidden="true"></i>Charter</a>
+      <a href="#scope"><i class="fa-solid fa-sitemap" aria-hidden="true"></i>Scope</a>
+      <a href="#schedule"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>Schedule</a>
+      <a href="#cost"><i class="fa-solid fa-coins" aria-hidden="true"></i>Cost</a>
+      <a href="#quality"><i class="fa-solid fa-award" aria-hidden="true"></i>Quality</a>
+      <a href="#risks"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>Risks</a>
+      <a href="#comms"><i class="fa-solid fa-comments" aria-hidden="true"></i>Comms</a>
+      <a href="#conclusion"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i>Conclusion</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="icon-btn lang-toggle" href="index.html" lang="ar" hreflang="ar" title="العربية" aria-label="عرض بالعربية">ع</a>
+      <button class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="Dark mode" title="Dark mode">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Open menu">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 0) Cover -->
+  <section id="cover" class="cover">
+    <div class="cover-hero">
+      <div class="container">
+        <p class="course">Applied Project in Information Systems Project Management</p>
+        <h1>Sanadak Tech</h1>
+        <p class="tagline">A technical support platform for startups and small businesses</p>
+        <p class="instructor"><span>Course instructor:</span> Dr. Lamia Al-Hazmi</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="team-card">
+        <h2 class="team-title"><i class="fa-solid fa-users" aria-hidden="true"></i>Project team</h2>
+        <div class="table-wrap" tabindex="0">
+          <table class="team-table">
+            <thead>
+              <tr><th>Student ID</th><th>Student name</th><th>Project role</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">44503468</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Raghad Nasser Al-Murshidi</td><td>UI/UX Designer</td></tr>
+              <tr><td class="num">44507226</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Sarah Fatem Al-Mutairi</td><td>Project Manager</td></tr>
+              <tr><td class="num">44502902</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Saba Hasen Al-Shamrani</td><td>Systems and Requirements Analyst</td></tr>
+              <tr><td class="num">44455650</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Wasan Saeed Al-Thubaiti</td><td>Development and Technology Lead</td></tr>
+              <tr><td class="num">44451429</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>Rayman Shaea Al-Talhi</td><td>Quality and Risk Lead</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1) Idea -->
+  <section id="idea" class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span>
+        <h2>About the idea</h2>
+      </header>
+      <p class="lead reveal">Startups and sole establishments are widespread, but they often have no IT department of their own. When a network, software, or hardware problem hits, their work stops. Sanadak Tech is a platform where a customer reports the problem and the system automatically routes it to the right technician. The technician accepts the request, then handles it remotely or on site until it is resolved.</p>
+
+      <ul class="category-list reveal" aria-label="Problem categories">
+        <li><i class="fa-solid fa-network-wired" aria-hidden="true"></i>Networks</li>
+        <li><i class="fa-solid fa-code" aria-hidden="true"></i>Software</li>
+        <li><i class="fa-solid fa-laptop" aria-hidden="true"></i>Hardware</li>
+      </ul>
+
+      <h3 class="reveal">The request journey</h3>
+      <ol class="journey reveal">
+        <li><span class="journey-icon"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></span>Customer submits a ticket</li>
+        <li><span class="journey-icon"><i class="fa-solid fa-shuffle" aria-hidden="true"></i></span>System classifies and routes</li>
+        <li><span class="journey-icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></span>Technician accepts</li>
+        <li><span class="journey-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span>Work and resolution</li>
+        <li><span class="journey-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></span>Ticket closure and service rating</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 2) Item 1 -->
+  <section id="charter" class="section section-alt">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-file-signature" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">Item 1</p><h2>Project Charter</h2></div>
+      </header>
+
+      <div class="charter reveal">
+        <div class="charter-row"><div class="charter-key">Project name</div><div>Sanadak Tech</div></div>
+        <div class="charter-row"><div class="charter-key">Main objective</div><div>Build an online platform that lets startups and sole establishments report their technical problems. The platform automatically routes each ticket to the right technician and tracks it through to resolution, reducing business downtime and its cost.</div></div>
+        <div class="charter-row"><div class="charter-key">Project description and products</div><div>
+          <ul>
+            <li><strong>Customer portal (web and mobile):</strong> submit a ticket, classify it (networks and infrastructure / software / hardware), attach images, track status, rate the service.</li>
+            <li><strong>Smart routing engine:</strong> assigns tickets by specialty, location, and technician availability.</li>
+            <li><strong>Technician app (mobile):</strong> accept or decline requests, update status live, close tickets.</li>
+            <li><strong>Admin dashboard:</strong> manage customers and technicians, reports and performance indicators.</li>
+            <li><strong>Online payment and notification integration</strong> (SMS / Push / email).</li>
+          </ul>
+        </div></div>
+        <div class="charter-row"><div class="charter-key">Project manager</div><div>
+          <p class="pm-name">Sarah Fatem Al-Mutairi</p>
+          <p><strong>Responsibilities:</strong> lead the team, prepare and approve the project management plan, monitor schedule, cost, and quality, manage risks, receive change requests and escalate them to the change control board, communicate with the sponsor.</p>
+          <p><strong>Authority:</strong> assign tasks, spend up to 10% of any single budget item without referring to the sponsor, use the contingency reserve after documenting it.</p>
+        </div></div>
+        <div class="charter-row"><div class="charter-key">Estimated duration</div><div>32 weeks (about 8 months)</div></div>
+        <div class="charter-row"><div class="charter-key">Estimated cost</div><div>SAR 500,000</div></div>
+        <div class="charter-row"><div class="charter-key">Stakeholders</div><div>See the <a href="#stakeholders">stakeholder list in Item 7</a>.</div></div>
+        <div class="charter-row"><div class="charter-key">Success criteria</div><div>
+          <ul>
+            <li>Launch on time and within budget (variance no more than ±10%).</li>
+            <li>Tickets routed to a technician in under 15 minutes.</li>
+            <li>95% of test cases passed before launch.</li>
+            <li>50 customers and 20 technicians registered in the pilot launch.</li>
+          </ul>
+        </div></div>
+        <div class="charter-row"><div class="charter-key">Sponsor</div><div>Founder of the Sanadak platform / funding body</div></div>
+      </div>
+
+      <div class="signatures reveal">
+        <div class="signature"><h3>Sponsor approval</h3><div class="sign-line"><span>Signature</span></div><div class="sign-line"><span>Date</span></div></div>
+        <div class="signature"><h3>Project manager</h3><div class="sign-line"><span>Signature</span></div><div class="sign-line"><span>Date</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) Item 2 -->
+  <section id="scope" class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-sitemap" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">Item 2</p><h2>Project Scope and WBS</h2></div>
+      </header>
+
+      <h3 class="reveal">Scope statement</h3>
+      <div class="scope-grid reveal">
+        <div class="scope-card scope-in"><h4>In scope</h4><p>Requirements analysis, system and interface design, development (customer portal, technician app, admin dashboard, routing engine), payment and notification integration, cloud hosting, testing, training the operations team and technicians, and a pilot launch in the city of Jeddah.</p></div>
+        <div class="scope-card scope-out"><h4>Out of scope</h4><p>Running the service after launch, expanding to other cities, hiring technicians, supplying spare parts and hardware, marketing campaigns.</p></div>
+        <div class="scope-card"><h4>Key deliverables</h4><p>Requirements document, interface designs, the platform with its four components, test reports, user guides, project closure report.</p></div>
+        <div class="scope-card"><h4>Assumptions</h4><p>Contracted technicians are available before launch, and core requirements remain stable after approval.</p></div>
+        <div class="scope-card"><h4>Constraints</h4><p>Budget of SAR 500,000, duration of 32 weeks, compliance with the Saudi Personal Data Protection Law.</p></div>
+      </div>
+
+      <h3 class="reveal">Work Breakdown Structure (WBS)</h3>
+      <div class="wbs reveal">
+        <div class="wbs-root"><span class="code">1.0</span> Sanadak Tech platform</div>
+        <div class="wbs-level">
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.1</span> Project management</div>
+            <ul>
+              <li><span class="code">1.1.1</span> Charter preparation and initiation</li>
+              <li><span class="code">1.1.2</span> Project management plan</li>
+              <li><span class="code">1.1.3</span> Monitoring and reporting</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.2</span> Analysis and design</div>
+            <ul>
+              <li><span class="code">1.2.1</span> Requirements gathering and analysis</li>
+              <li><span class="code">1.2.2</span> System architecture and database design</li>
+              <li><span class="code">1.2.3</span> UI/UX design</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.3</span> Development</div>
+            <ul>
+              <li><span class="code">1.3.1</span> Backend and routing engine</li>
+              <li><span class="code">1.3.2</span> Customer portal</li>
+              <li><span class="code">1.3.3</span> Technician app</li>
+              <li><span class="code">1.3.4</span> Admin dashboard</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.4</span> Infrastructure and integration</div>
+            <ul>
+              <li><span class="code">1.4.1</span> Cloud environment setup</li>
+              <li><span class="code">1.4.2</span> Payment and notification integration</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.5</span> Testing and quality</div>
+            <ul>
+              <li><span class="code">1.5.1</span> Integration and system testing</li>
+              <li><span class="code">1.5.2</span> Acceptance testing with pilot customers</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.6</span> Launch and closure</div>
+            <ul>
+              <li><span class="code">1.6.1</span> Operations team and technician training</li>
+              <li><span class="code">1.6.2</span> Launch and project closure</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) Item 3 -->
+  <section id="schedule" class="section section-alt">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">Item 3</p><h2>Schedule and Critical Path</h2></div>
+      </header>
+
+      <h3 class="reveal">Activity table <span class="muted">(duration in weeks)</span></h3>
+      <div class="table-wrap reveal" tabindex="0">
+        <table class="data-table schedule-table">
+          <thead>
+            <tr><th>Code</th><th class="wide">Activity</th><th>Duration</th><th>Predecessors</th><th>ES</th><th>EF</th><th>LS</th><th>LF</th><th>Float</th><th>Critical?</th></tr>
+          </thead>
+          <tbody id="schedule-body"></tbody>
+        </table>
+      </div>
+
+      <div class="critical-box reveal">
+        <h3><i class="fa-solid fa-route" aria-hidden="true"></i>Critical path</h3>
+        <ol id="critical-path" class="critical-path"></ol>
+        <p class="formula-line">Project duration: <strong id="critical-total"></strong> <bdi dir="ltr" id="critical-sum"></bdi></p>
+      </div>
+
+      <h3 class="reveal">Gantt chart</h3>
+      <ul class="legend reveal">
+        <li><span class="swatch swatch-critical"></span>Critical activity</li>
+        <li><span class="swatch swatch-normal"></span>Non-critical activity</li>
+        <li><span class="swatch swatch-float"></span>Float</li>
+        <li class="muted">The number inside each bar is the activity duration in weeks</li>
+      </ul>
+      <div class="table-wrap reveal" tabindex="0">
+        <div id="gantt" class="gantt" role="img" aria-label="Gantt chart of the project activities over 32 weeks"></div>
+      </div>
+
+      <h3 class="reveal">Network diagram (Activity on Node)</h3>
+      <div class="network-key reveal">
+        <div class="key-node" aria-hidden="true">
+          <span>ES</span><span>Duration</span><span>EF</span>
+          <b>Activity code</b>
+          <span>LS</span><span>Float</span><span>LF</span>
+        </div>
+        <p>The diagram reads from left to right. The critical path is red and the other activities are blue. Hover over a box to see the activity name.</p>
+      </div>
+      <div class="table-wrap reveal" tabindex="0">
+        <div id="network" class="network"></div>
+      </div>
+
+      <h3 class="reveal">How it is calculated</h3>
+      <p class="reveal">In the <strong>Forward Pass</strong> we start from the first activity: an activity's early start (ES) is the largest EF among its predecessors, and EF = ES + duration. In the <strong>Backward Pass</strong> we start from the end of the project: the late finish (LF) is the smallest LS among its successors, and LS = LF − duration. Then <strong>Float = LS − ES</strong>. Activities with zero float form the critical path, and any delay in them delays the whole project. For example, activity H starts at 11 and can start as late as 14, so its float is 3 weeks.</p>
+    </div>
+  </section>
+
+  <!-- 5) Item 4 -->
+  <section id="cost" class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-coins" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">Item 4</p><h2>Cost and Budget</h2></div>
+      </header>
+
+      <div class="cost-layout">
+        <div class="reveal">
+          <h3>Cost by work package</h3>
+          <div class="table-wrap" tabindex="0">
+            <table class="data-table cost-table">
+              <thead><tr><th>WBS code</th><th class="wide">Work package</th><th>Cost (SAR)</th></tr></thead>
+              <tbody id="cost-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="cost-side">
+          <div class="reveal">
+            <h3>Activity cost across the six areas</h3>
+            <div class="doughnut-wrap">
+              <canvas id="doughnut-chart" role="img" aria-label="Doughnut chart of SAR 430,000 distributed across the six work areas"></canvas>
+              <div class="doughnut-center"><strong id="doughnut-total"></strong><span>SAR</span></div>
+            </div>
+            <table class="legend-table">
+              <thead><tr><th>Area</th><th>Cost (SAR)</th><th>Share</th></tr></thead>
+              <tbody id="area-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="reveal">How the budget is built</h3>
+      <div id="budget-build" class="budget-build reveal"></div>
+
+      <h3 class="reveal">Estimating method</h3>
+      <p class="reveal">We used <strong>bottom-up estimating</strong>: we estimated each WBS work package separately, then added them up to reach the total activity cost. We then added two kinds of reserve. The <strong>contingency reserve</strong> covers known risks, is controlled by the project manager, and is part of the cost baseline. The <strong>management reserve</strong> covers unknown risks, is controlled by the sponsor, and sits outside the baseline but inside the total budget.</p>
+    </div>
+  </section>
+
+  <!-- 6) Item 5 -->
+  <section id="quality" class="section section-alt">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">Item 5</p><h2>Quality Standards and Tools</h2></div>
+      </header>
+
+      <h3 class="reveal">Quality standards</h3>
+      <div class="table-wrap reveal" tabindex="0">
+        <table class="data-table text-table">
+          <thead><tr><th>Standard</th><th>Target measure</th></tr></thead>
+          <tbody>
+            <tr><td>Ticket routing speed</td><td>Under 15 minutes from submission</td></tr>
+            <tr><td>Platform performance</td><td>Page load under 3 seconds</td></tr>
+            <tr><td>Availability</td><td>99.5%</td></tr>
+            <tr><td>Test success</td><td>95% of test cases before launch</td></tr>
+            <tr><td>Defect density</td><td>No critical defects at launch</td></tr>
+            <tr><td>Customer satisfaction in the pilot launch</td><td>4 out of 5 or higher</td></tr>
+            <tr><td>Information security</td><td>Data encryption and customer data protection under the Personal Data Protection Law</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="reveal"><strong>References:</strong> the ISO/IEC 25010 software quality model (functionality, performance, usability, reliability, security), and the ISO 9001 quality management principles.</p>
+
+      <h3 class="reveal">Quality tools</h3>
+      <div class="card-grid reveal">
+        <article class="tool-card"><i class="fa-solid fa-list-check" aria-hidden="true"></i><h4>Checklists</h4><p>To review every screen and requirement before approval.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-fish" aria-hidden="true"></i><h4>Fishbone diagram (Ishikawa)</h4><p>To analyze the causes of delayed ticket routing.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><h4>Pareto chart</h4><p>To rank the most frequent defect types found in testing.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-chart-line" aria-hidden="true"></i><h4>Control charts</h4><p>To monitor response time.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><h4>Flowchart</h4><p>To show the path of a ticket.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-vial" aria-hidden="true"></i><h4>Reviews and testing</h4><p>Code review, unit testing, integration testing, acceptance testing.</p></article>
+      </div>
+
+      <h3 class="reveal">Example: fishbone diagram for delayed ticket routing</h3>
+      <div class="table-wrap figure-box reveal" tabindex="0">
+        <svg class="fishbone" viewBox="0 0 960 380" role="img" aria-label="Fishbone diagram: causes of delayed ticket routing, grouped under people, technology, processes, and data">
+          <defs><marker id="fish-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="marker-normal"/></marker></defs>
+          <line x1="935" y1="190" x2="172" y2="190" class="spine" marker-end="url(#fish-head)"/>
+          <rect x="16" y="150" width="156" height="80" rx="10" class="fish-effect"/>
+          <text x="94" y="184" class="fish-effect-text">Delayed ticket</text>
+          <text x="94" y="210" class="fish-effect-text">routing</text>
+
+          <!-- People -->
+          <line x1="770" y1="62" x2="690" y2="190" class="bone"/>
+          <rect x="705" y="28" width="130" height="34" rx="8" class="fish-cat"/><text x="770" y="51" class="fish-cat-text">People</text>
+          <line x1="743" y1="105" x2="935" y2="105" class="twig"/><text x="839" y="98" class="fish-text">Few technicians available</text>
+          <line x1="715" y1="150" x2="915" y2="150" class="twig"/><text x="815" y="143" class="fish-text">Slow request acceptance</text>
+
+          <!-- Technology -->
+          <line x1="470" y1="62" x2="390" y2="190" class="bone"/>
+          <rect x="405" y="28" width="130" height="34" rx="8" class="fish-cat"/><text x="470" y="51" class="fish-cat-text">Technology</text>
+          <line x1="443" y1="105" x2="635" y2="105" class="twig"/><text x="539" y="98" class="fish-text">Routing engine faults</text>
+          <line x1="415" y1="150" x2="615" y2="150" class="twig"/><text x="515" y="143" class="fish-text">Delayed notifications</text>
+
+          <!-- Processes -->
+          <line x1="770" y1="318" x2="690" y2="190" class="bone"/>
+          <rect x="705" y="318" width="130" height="34" rx="8" class="fish-cat"/><text x="770" y="341" class="fish-cat-text">Processes</text>
+          <line x1="715" y1="230" x2="915" y2="230" class="twig"/><text x="815" y="223" class="fish-text">Unclear assignment rules</text>
+          <line x1="743" y1="275" x2="935" y2="275" class="twig"/><text x="839" y="268" class="fish-text">No ticket prioritization</text>
+
+          <!-- Data -->
+          <line x1="470" y1="318" x2="390" y2="190" class="bone"/>
+          <rect x="405" y="318" width="130" height="34" rx="8" class="fish-cat"/><text x="470" y="341" class="fish-cat-text">Data</text>
+          <line x1="415" y1="230" x2="615" y2="230" class="twig"/><text x="515" y="223" class="fish-text">Misclassified tickets</text>
+          <line x1="443" y1="275" x2="635" y2="275" class="twig"/><text x="539" y="268" class="fish-text">Outdated technician location</text>
+        </svg>
+      </div>
+
+      <h3 class="reveal">Example: Pareto chart of defect types in testing</h3>
+      <div class="figure-box reveal">
+        <p class="data-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>Hypothetical data to illustrate the tool, not actual test results.</p>
+        <div class="pareto-wrap"><canvas id="pareto-chart" role="img" aria-label="Illustrative Pareto chart: six defect types in descending order with the cumulative share"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) Item 6 -->
+  <section id="risks" class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">Item 6</p><h2>Risks and Response Strategies</h2></div>
+      </header>
+
+      <h3 class="reveal">Risk register</h3>
+      <div class="table-wrap reveal" tabindex="0">
+        <table class="data-table risk-table">
+          <thead><tr><th>#</th><th class="wide">Risk</th><th>Probability</th><th>Impact</th><th>Rating</th><th>Strategy</th><th class="wide">Action</th></tr></thead>
+          <tbody id="risk-body"></tbody>
+        </table>
+      </div>
+
+      <h3 class="reveal">Probability and impact matrix</h3>
+      <div class="matrix-wrap reveal">
+        <div class="matrix-y">Probability</div>
+        <div id="risk-matrix" class="matrix"></div>
+        <div class="matrix-x">Impact</div>
+      </div>
+      <p class="muted matrix-note reveal">* R4 has a "very high" impact. It sits in the highest impact column because the matrix is 3×3, and its color follows its "high" rating in the register.</p>
+
+      <h3 class="reveal">Response strategies for negative risks</h3>
+      <div class="card-grid card-grid-4 reveal">
+        <article class="tool-card"><i class="fa-solid fa-ban" aria-hidden="true"></i><h4>Avoid</h4><p>Change the plan to remove the risk entirely. Example, R1: freeze requirements after approval.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-right-left" aria-hidden="true"></i><h4>Transfer</h4><p>Shift the risk's impact to a third party. Example, R5: a service level agreement with the hosting provider.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><h4>Mitigate</h4><p>Reduce the risk's probability or impact. Example, R2: assign the strongest developers and review weekly.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-handshake" aria-hidden="true"></i><h4>Accept</h4><p>Acknowledge the risk and deal with it if it occurs. Example, R7: continuous documentation and knowledge sharing.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8) Item 7 -->
+  <section id="comms" class="section section-alt">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">Item 7</p><h2>Communication Plan and Channels</h2></div>
+      </header>
+
+      <div class="channels-layout reveal">
+        <div id="stakeholders">
+          <h3>Stakeholders in the communication plan <span class="muted">(n = 10)</span></h3>
+          <ol class="stakeholder-list">
+            <li>Project manager</li>
+            <li>Systems and requirements analyst</li>
+            <li>Interface designer</li>
+            <li>Development and technology lead</li>
+            <li>Quality and risk lead</li>
+            <li>Sponsor (Sanadak founder / funder)</li>
+            <li>Pilot customer representative (startups)</li>
+            <li>Contracted technician representative</li>
+            <li>Operations and support team</li>
+            <li>Service providers (cloud hosting and payment gateway)</li>
+          </ol>
+        </div>
+        <div class="channels-side">
+          <h3>Number of communication channels</h3>
+          <div class="equation">
+            <div dir="ltr" class="equation-math">n(n−1)/2 = 10 × 9 / 2 = <strong>45</strong></div>
+            <div class="equation-label">45 communication channels</div>
+          </div>
+          <div id="channels-graph" class="channels-graph"></div>
+        </div>
+      </div>
+
+      <h3 class="reveal">Communication plan matrix</h3>
+      <div class="table-wrap reveal" tabindex="0">
+        <table class="data-table text-table comm-table">
+          <thead><tr><th>What (information)</th><th>To whom</th><th>Method</th><th>Frequency</th><th>Owner</th></tr></thead>
+          <tbody>
+            <tr><td>Project status report (schedule, cost, and risks)</td><td>Sponsor</td><td>Written report + meeting</td><td>Monthly</td><td>Project manager</td></tr>
+            <tr><td>Daily short meeting</td><td>Project team</td><td>In-person or remote meeting</td><td>Daily (15 minutes)</td><td>Project manager</td></tr>
+            <tr><td>Progress and task review</td><td>Project team</td><td>Meeting + task management tool</td><td>Weekly</td><td>Project manager</td></tr>
+            <tr><td>Approval of requirements and designs</td><td>Sponsor + customer representative</td><td>Workshop</td><td>At the end of each phase</td><td>Systems analyst</td></tr>
+            <tr><td>Change requests and decisions</td><td>Change control board</td><td>Change request form + meeting</td><td>As needed</td><td>Project manager</td></tr>
+            <tr><td>Test results and quality reports</td><td>Team + sponsor</td><td>Written report</td><td>End of each test cycle</td><td>Quality lead</td></tr>
+            <tr><td>Technical integration updates</td><td>Service providers</td><td>Email + meeting</td><td>As needed</td><td>Development lead</td></tr>
+            <tr><td>Training and launch announcement</td><td>Technicians + operations team</td><td>Training workshops + guides</td><td>Before launch</td><td>Quality lead + interface designer</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9) Conclusion -->
+  <section id="conclusion" class="section conclusion">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i></span>
+        <h2>Conclusion</h2>
+      </header>
+      <ul class="stats reveal">
+        <li><strong>32</strong><span>weeks</span></li>
+        <li><strong>500,000</strong><span>SAR</span></li>
+        <li><strong>8</strong><span>managed risks</span></li>
+        <li><strong>45</strong><span>communication channels</span></li>
+      </ul>
+      <p class="lead reveal">Sanadak Tech connects startups and sole establishments with the right technician, through a 32-week plan and a budget of SAR 500,000, with 8 managed risks and 45 communication channels. Applying the PMI methodology keeps the project's elements connected and its objectives on track.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container"><i class="fa-solid fa-headset" aria-hidden="true"></i> Sanadak Tech · Applied Project in Information Systems Project Management</div>
+</footer>
+
+<a href="#cover" class="back-top" id="back-top" aria-label="Back to top" title="Back to top"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+
+<script src="vendor/chartjs/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

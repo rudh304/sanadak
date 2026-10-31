@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سندك التقني</title>
+  <meta name="description" content="سندك التقني: مشروع تطبيقي في إدارة مشروع نظم المعلومات وفق منهجية PMI.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B3D91'/%3E%3Cpath d='M8 19v-3a8 8 0 0 1 16 0v3' fill='none' stroke='%2314B8A6' stroke-width='3'/%3E%3Crect x='6' y='17' width='5' height='8' rx='2' fill='white'/%3E%3Crect x='21' y='17' width='5' height='8' rx='2' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/fonts/fonts.css">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var root = document.documentElement, saved = null;
+      root.classList.add('js');
+      try { saved = localStorage.getItem('theme'); } catch (e) {}
+      root.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    })();
+  </script>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="#cover"><i class="fa-solid fa-headset" aria-hidden="true"></i><span>سندك التقني</span></a>
+    <nav id="main-nav" class="main-nav" aria-label="أقسام الموقع">
+      <a href="#cover"><i class="fa-solid fa-users" aria-hidden="true"></i>الفريق</a>
+      <a href="#idea"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i>الفكرة</a>
+      <a href="#charter"><i class="fa-solid fa-file-signature" aria-hidden="true"></i>الميثاق</a>
+      <a href="#scope"><i class="fa-solid fa-sitemap" aria-hidden="true"></i>النطاق</a>
+      <a href="#schedule"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i>الجدول</a>
+      <a href="#cost"><i class="fa-solid fa-coins" aria-hidden="true"></i>التكلفة</a>
+      <a href="#quality"><i class="fa-solid fa-award" aria-hidden="true"></i>الجودة</a>
+      <a href="#risks"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>المخاطر</a>
+      <a href="#comms"><i class="fa-solid fa-comments" aria-hidden="true"></i>الاتصالات</a>
+      <a href="#conclusion"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i>الخاتمة</a>
+    </nav>
+    <div class="topbar-actions">
+      <a class="icon-btn lang-toggle" href="en.html" lang="en" hreflang="en" title="English" aria-label="View in English">EN</a>
+      <button class="icon-btn theme-toggle" type="button" aria-pressed="false" aria-label="الوضع الداكن" title="الوضع الداكن">
+        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="فتح القائمة">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- 0) الغلاف -->
+  <section id="cover" class="cover">
+    <div class="cover-hero">
+      <div class="container">
+        <p class="course">مشروع تطبيقي في إدارة مشروع نظم المعلومات</p>
+        <h1>سندك التقني</h1>
+        <p class="tagline">منصة الدعم الفني للشركات الناشئة والمؤسسات الصغيرة</p>
+        <p class="instructor"><span>أستاذة المقرر:</span> د. لمياء الحازمي</p>
+      </div>
+    </div>
+    <div class="container">
+      <div class="team-card">
+        <h2 class="team-title"><i class="fa-solid fa-users" aria-hidden="true"></i>فريق العمل</h2>
+        <div class="table-wrap" tabindex="0">
+          <table class="team-table">
+            <thead>
+              <tr><th>الرقم التسلسلي</th><th>اسم الطالبة</th><th>الدور في المشروع</th></tr>
+            </thead>
+            <tbody>
+              <tr><td class="num">44503468</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>رغد ناصر المرشدي</td><td>مصممة واجهات وتجربة المستخدم (UI/UX)</td></tr>
+              <tr><td class="num">44507226</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>سارة فاطم المطيري</td><td>مديرة المشروع</td></tr>
+              <tr><td class="num">44502902</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>صبا حاسن الشمراني</td><td>محللة النظم والمتطلبات</td></tr>
+              <tr><td class="num">44455650</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>وسن سعيد الثبيتي</td><td>مسؤولة التطوير والتقنية</td></tr>
+              <tr><td class="num">44451429</td><td class="student"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>ريمان شائع الطلحي</td><td>مسؤولة الجودة والمخاطر</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1) نبذة عن الفكرة -->
+  <section id="idea" class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></span>
+        <h2>نبذة عن الفكرة</h2>
+      </header>
+      <p class="lead reveal">الشركات الناشئة والمؤسسات الفردية كثيرة الانتشار، لكنها غالباً لا تملك قسم تقنية معلومات خاصاً بها. فإذا واجهت مشكلة في الشبكات أو البرمجيات أو الأجهزة، تتعطل أعمالها. "سندك التقني" منصة يرفع فيها العميل مشكلته، فيوجّهها النظام تلقائياً للفني المختص. يقبل الفني الطلب، ثم يباشره عن بُعد أو في الموقع حتى يُحل.</p>
+
+      <ul class="category-list reveal" aria-label="فئات المشاكل">
+        <li><i class="fa-solid fa-network-wired" aria-hidden="true"></i>الشبكات</li>
+        <li><i class="fa-solid fa-code" aria-hidden="true"></i>البرمجيات</li>
+        <li><i class="fa-solid fa-laptop" aria-hidden="true"></i>الأجهزة</li>
+      </ul>
+
+      <h3 class="reveal">رحلة الطلب</h3>
+      <ol class="journey reveal">
+        <li><span class="journey-icon"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i></span>العميل يرفع البلاغ</li>
+        <li><span class="journey-icon"><i class="fa-solid fa-shuffle" aria-hidden="true"></i></span>النظام يصنّف ويوجّه</li>
+        <li><span class="journey-icon"><i class="fa-solid fa-user-check" aria-hidden="true"></i></span>الفني يقبل</li>
+        <li><span class="journey-icon"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></span>المباشرة والحل</li>
+        <li><span class="journey-icon"><i class="fa-solid fa-star" aria-hidden="true"></i></span>إغلاق البلاغ وتقييم الخدمة</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 2) البند الأول -->
+  <section id="charter" class="section section-alt">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-file-signature" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">البند الأول</p><h2>ميثاق المشروع <span class="en">(Project Charter)</span></h2></div>
+      </header>
+
+      <div class="charter reveal">
+        <div class="charter-row"><div class="charter-key">اسم المشروع</div><div>سندك التقني</div></div>
+        <div class="charter-row"><div class="charter-key">الهدف الأساسي</div><div>بناء منصة إلكترونية تمكّن الشركات الناشئة والمؤسسات الفردية من رفع مشاكلها التقنية. توجّه المنصة كل بلاغ تلقائياً إلى الفني المختص، وتتابعه حتى الحل، لتقليل وقت تعطل الأعمال وتكلفته.</div></div>
+        <div class="charter-row"><div class="charter-key">وصف المشروع ومنتجاته</div><div>
+          <ul>
+            <li><strong>بوابة العميل (ويب وجوال):</strong> رفع بلاغ، تصنيفه (شبكات وبنية تحتية / برمجيات / أجهزة)، إرفاق صور، متابعة الحالة، تقييم الخدمة.</li>
+            <li><strong>محرك التوجيه الذكي:</strong> إسناد البلاغ حسب التخصص والموقع وتوفر الفني.</li>
+            <li><strong>تطبيق الفني (جوال):</strong> قبول أو رفض الطلب، التحديث المباشر للحالة، الإغلاق.</li>
+            <li><strong>لوحة الإدارة:</strong> إدارة العملاء والفنيين، التقارير ومؤشرات الأداء.</li>
+            <li><strong>تكامل الدفع الإلكتروني والإشعارات</strong> (<bdi>SMS</bdi> / <bdi>Push</bdi> / بريد).</li>
+          </ul>
+        </div></div>
+        <div class="charter-row"><div class="charter-key">مديرة المشروع</div><div>
+          <p class="pm-name">سارة فاطم المطيري</p>
+          <p><strong>المسؤوليات:</strong> قيادة الفريق، إعداد خطة إدارة المشروع واعتمادها، متابعة الجدول والتكلفة والجودة، إدارة المخاطر، استقبال طلبات التغيير ورفعها لمجلس التحكم بالتغييرات، التواصل مع الراعي.</p>
+          <p><strong>الصلاحيات:</strong> توزيع المهام، الصرف من الميزانية في حدود <bdi dir="ltr">10%</bdi> من البند الواحد دون الرجوع للراعي، استخدام احتياطي الطوارئ بعد التوثيق.</p>
+        </div></div>
+        <div class="charter-row"><div class="charter-key">المدة التقديرية</div><div>32 أسبوعاً (8 أشهر تقريباً)</div></div>
+        <div class="charter-row"><div class="charter-key">التكلفة التقديرية</div><div>500,000 ريال سعودي</div></div>
+        <div class="charter-row"><div class="charter-key">المعنيون بالمشروع</div><div>انظر <a href="#stakeholders">قائمة المعنيين في البند السابع</a>.</div></div>
+        <div class="charter-row"><div class="charter-key">معايير النجاح</div><div>
+          <ul>
+            <li>الإطلاق خلال المدة وضمن الميزانية (انحراف لا يتجاوز <bdi dir="ltr">±10%</bdi>).</li>
+            <li>توجيه البلاغ للفني خلال أقل من 15 دقيقة.</li>
+            <li>نجاح <bdi dir="ltr">95%</bdi> من حالات الاختبار قبل الإطلاق.</li>
+            <li>تسجيل 50 عميلاً و20 فنياً في الإطلاق التجريبي.</li>
+          </ul>
+        </div></div>
+        <div class="charter-row"><div class="charter-key">الراعي <span class="en">(Sponsor)</span></div><div>مؤسس منصة سندك / الجهة الممولة</div></div>
+      </div>
+
+      <div class="signatures reveal">
+        <div class="signature"><h3>اعتماد الراعي</h3><div class="sign-line"><span>التوقيع</span></div><div class="sign-line"><span>التاريخ</span></div></div>
+        <div class="signature"><h3>مديرة المشروع</h3><div class="sign-line"><span>التوقيع</span></div><div class="sign-line"><span>التاريخ</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3) البند الثاني -->
+  <section id="scope" class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-sitemap" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">البند الثاني</p><h2>نطاق المشروع و<span class="en">WBS</span></h2></div>
+      </header>
+
+      <h3 class="reveal">بيان النطاق</h3>
+      <div class="scope-grid reveal">
+        <div class="scope-card scope-in"><h4>داخل النطاق</h4><p>تحليل المتطلبات، تصميم النظام والواجهات، تطوير (بوابة العميل، تطبيق الفني، لوحة الإدارة، محرك التوجيه)، تكامل الدفع والإشعارات، الاستضافة السحابية، الاختبار، تدريب فريق التشغيل والفنيين، الإطلاق التجريبي في مدينة جدة.</p></div>
+        <div class="scope-card scope-out"><h4>خارج النطاق</h4><p>تشغيل الخدمة بعد الإطلاق، التوسع لمدن أخرى، توظيف الفنيين، توفير قطع الغيار والأجهزة، الحملات التسويقية.</p></div>
+        <div class="scope-card"><h4>المخرجات الرئيسية</h4><p>وثيقة المتطلبات، تصاميم الواجهات، المنصة بمكوناتها الأربعة، تقارير الاختبار، أدلة الاستخدام، تقرير إغلاق المشروع.</p></div>
+        <div class="scope-card"><h4>الافتراضات</h4><p>توفر فنيين متعاقدين قبل الإطلاق، ثبات المتطلبات الأساسية بعد اعتمادها.</p></div>
+        <div class="scope-card"><h4>القيود</h4><p>الميزانية 500,000 ريال، المدة 32 أسبوعاً، الالتزام بنظام حماية البيانات الشخصية في المملكة.</p></div>
+      </div>
+
+      <h3 class="reveal">هيكل تجزئة العمل <span class="en">(WBS)</span></h3>
+      <div class="wbs reveal">
+        <div class="wbs-root"><span class="code">1.0</span> منصة سندك التقني</div>
+        <div class="wbs-level">
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.1</span> إدارة المشروع</div>
+            <ul>
+              <li><span class="code">1.1.1</span> إعداد الميثاق والبدء</li>
+              <li><span class="code">1.1.2</span> خطة إدارة المشروع</li>
+              <li><span class="code">1.1.3</span> المتابعة والتقارير</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.2</span> التحليل والتصميم</div>
+            <ul>
+              <li><span class="code">1.2.1</span> جمع وتحليل المتطلبات</li>
+              <li><span class="code">1.2.2</span> تصميم معمارية النظام وقاعدة البيانات</li>
+              <li><span class="code">1.2.3</span> تصميم الواجهات UI/UX</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.3</span> التطوير</div>
+            <ul>
+              <li><span class="code">1.3.1</span> الواجهة الخلفية ومحرك التوجيه</li>
+              <li><span class="code">1.3.2</span> بوابة العميل</li>
+              <li><span class="code">1.3.3</span> تطبيق الفني</li>
+              <li><span class="code">1.3.4</span> لوحة الإدارة</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.4</span> البنية التحتية والتكامل</div>
+            <ul>
+              <li><span class="code">1.4.1</span> إعداد البيئة السحابية</li>
+              <li><span class="code">1.4.2</span> تكامل الدفع والإشعارات</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.5</span> الاختبار والجودة</div>
+            <ul>
+              <li><span class="code">1.5.1</span> اختبار التكامل والنظام</li>
+              <li><span class="code">1.5.2</span> اختبار القبول مع عملاء تجريبيين</li>
+            </ul>
+          </div>
+          <div class="wbs-branch">
+            <div class="wbs-node"><span class="code">1.6</span> الإطلاق والإغلاق</div>
+            <ul>
+              <li><span class="code">1.6.1</span> تدريب فريق التشغيل والفنيين</li>
+              <li><span class="code">1.6.2</span> الإطلاق وإغلاق المشروع</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4) البند الثالث -->
+  <section id="schedule" class="section section-alt">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-calendar-days" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">البند الثالث</p><h2>الجدول الزمني والمسار الحرج</h2></div>
+      </header>
+
+      <h3 class="reveal">جدول الأنشطة <span class="muted">(المدة بالأسابيع)</span></h3>
+      <div class="table-wrap reveal" tabindex="0">
+        <table class="data-table schedule-table">
+          <thead>
+            <tr><th>الرمز</th><th class="wide">النشاط</th><th>المدة</th><th>يسبقه</th><th>ES</th><th>EF</th><th>LS</th><th>LF</th><th>الفائض</th><th>حرج؟</th></tr>
+          </thead>
+          <tbody id="schedule-body"></tbody>
+        </table>
+      </div>
+
+      <div class="critical-box reveal">
+        <h3><i class="fa-solid fa-route" aria-hidden="true"></i>المسار الحرج</h3>
+        <ol id="critical-path" class="critical-path"></ol>
+        <p class="formula-line">مدة المشروع: <strong id="critical-total"></strong> <bdi dir="ltr" id="critical-sum"></bdi></p>
+      </div>
+
+      <h3 class="reveal">مخطط جانت</h3>
+      <ul class="legend reveal">
+        <li><span class="swatch swatch-critical"></span>نشاط حرج</li>
+        <li><span class="swatch swatch-normal"></span>نشاط غير حرج</li>
+        <li><span class="swatch swatch-float"></span>الفائض (Float)</li>
+        <li class="muted">الرقم داخل الشريط هو مدة النشاط بالأسابيع</li>
+      </ul>
+      <div class="table-wrap reveal" tabindex="0">
+        <div id="gantt" class="gantt" role="img" aria-label="مخطط جانت لأنشطة المشروع على مدى 32 أسبوعاً"></div>
+      </div>
+
+      <h3 class="reveal">مخطط الشبكة <span class="en">(Activity on Node)</span></h3>
+      <div class="network-key reveal">
+        <div class="key-node" aria-hidden="true">
+          <span>ES</span><span>المدة</span><span>EF</span>
+          <b>رمز النشاط</b>
+          <span>LS</span><span>الفائض</span><span>LF</span>
+        </div>
+        <p>يقرأ المخطط من اليمين إلى اليسار. المسار الحرج بالأحمر، وبقية الأنشطة بالأزرق. مرّر المؤشر فوق أي صندوق لعرض اسم النشاط.</p>
+      </div>
+      <div class="table-wrap reveal" tabindex="0">
+        <div id="network" class="network"></div>
+      </div>
+
+      <h3 class="reveal">طريقة الحساب</h3>
+      <p class="reveal">في <strong>المرور الأمامي (Forward Pass)</strong> نبدأ من أول نشاط: البداية المبكرة ES لأي نشاط هي أكبر قيمة EF بين الأنشطة السابقة له، و<bdi dir="ltr">EF = ES + المدة</bdi>. وفي <strong>المرور الخلفي (Backward Pass)</strong> نبدأ من نهاية المشروع: النهاية المتأخرة LF هي أصغر قيمة LS بين الأنشطة اللاحقة، و<bdi dir="ltr">LS = LF − المدة</bdi>. ثم نحسب <strong>الفائض = <bdi dir="ltr">LS − ES</bdi></strong>. الأنشطة التي فائضها صفر تشكّل المسار الحرج، وأي تأخير فيها يؤخر المشروع كله. مثال: النشاط H يبدأ عند 11 ويمكن أن يبدأ متأخراً عند 14، ففائضه 3 أسابيع.</p>
+    </div>
+  </section>
+
+  <!-- 5) البند الرابع -->
+  <section id="cost" class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-coins" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">البند الرابع</p><h2>التكلفة والميزانية</h2></div>
+      </header>
+
+      <div class="cost-layout">
+        <div class="reveal">
+          <h3>التكلفة حسب حزم العمل</h3>
+          <div class="table-wrap" tabindex="0">
+            <table class="data-table cost-table">
+              <thead><tr><th>رمز WBS</th><th class="wide">حزمة العمل</th><th>التكلفة (ريال)</th></tr></thead>
+              <tbody id="cost-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="cost-side">
+          <div class="reveal">
+            <h3>توزيع تكلفة الأنشطة على المجالات الستة</h3>
+            <div class="doughnut-wrap">
+              <canvas id="doughnut-chart" role="img" aria-label="رسم دائري لتوزيع 430,000 ريال على مجالات العمل الستة"></canvas>
+              <div class="doughnut-center"><strong id="doughnut-total"></strong><span>ريال</span></div>
+            </div>
+            <table class="legend-table">
+              <thead><tr><th>المجال</th><th>التكلفة (ريال)</th><th>النسبة</th></tr></thead>
+              <tbody id="area-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="reveal">بناء الميزانية</h3>
+      <div id="budget-build" class="budget-build reveal"></div>
+
+      <h3 class="reveal">أسلوب التقدير</h3>
+      <p class="reveal">استخدمنا <strong>التقدير من أسفل لأعلى (Bottom-up)</strong>: قدّرنا تكلفة كل حزمة عمل في WBS على حدة، ثم جمعناها لنصل إلى إجمالي تكلفة الأنشطة. وأضفنا إليها نوعين من الاحتياطي: <strong>احتياطي الطوارئ</strong> مخصص للمخاطر المعروفة، وصلاحيته لمديرة المشروع، وهو جزء من خط الأساس. أما <strong>احتياطي الإدارة</strong> فمخصص للمخاطر غير المعروفة، وصلاحيته للراعي، ويقع خارج خط الأساس وداخل الميزانية الكلية.</p>
+    </div>
+  </section>
+
+  <!-- 6) البند الخامس -->
+  <section id="quality" class="section section-alt">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-award" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">البند الخامس</p><h2>معايير وأدوات الجودة</h2></div>
+      </header>
+
+      <h3 class="reveal">معايير الجودة</h3>
+      <div class="table-wrap reveal" tabindex="0">
+        <table class="data-table text-table">
+          <thead><tr><th>المعيار</th><th>المقياس المستهدف</th></tr></thead>
+          <tbody>
+            <tr><td>سرعة توجيه البلاغ</td><td>أقل من 15 دقيقة من رفعه</td></tr>
+            <tr><td>أداء المنصة</td><td>تحميل الصفحة أقل من 3 ثوانٍ</td></tr>
+            <tr><td>الجاهزية والتوفر</td><td>99.5%</td></tr>
+            <tr><td>نجاح الاختبارات</td><td>95% من حالات الاختبار قبل الإطلاق</td></tr>
+            <tr><td>كثافة الأخطاء</td><td>لا أخطاء حرجة عند الإطلاق</td></tr>
+            <tr><td>رضا العملاء في الإطلاق التجريبي</td><td>4 من 5 أو أعلى</td></tr>
+            <tr><td>أمن المعلومات</td><td>تشفير البيانات وحماية بيانات العملاء وفق نظام حماية البيانات الشخصية</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="reveal"><strong>المرجعيات:</strong> نموذج جودة البرمجيات ISO/IEC 25010 (الوظيفية، الأداء، قابلية الاستخدام، الموثوقية، الأمان)، ومبادئ ISO 9001 لإدارة الجودة.</p>
+
+      <h3 class="reveal">أدوات الجودة</h3>
+      <div class="card-grid reveal">
+        <article class="tool-card"><i class="fa-solid fa-list-check" aria-hidden="true"></i><h4>قوائم الفحص <span class="en">(Checklists)</span></h4><p>لمراجعة كل شاشة ومتطلب قبل الاعتماد.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-fish" aria-hidden="true"></i><h4>مخطط عظم السمكة <span class="en">(Ishikawa)</span></h4><p>لتحليل أسباب تأخر توجيه البلاغات.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-chart-column" aria-hidden="true"></i><h4>مخطط باريتو <span class="en">(Pareto)</span></h4><p>لترتيب أكثر أنواع الأخطاء تكراراً في الاختبار.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-chart-line" aria-hidden="true"></i><h4>خرائط التحكم <span class="en">(Control Charts)</span></h4><p>لمراقبة زمن الاستجابة.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i><h4>مخطط التدفق <span class="en">(Flowchart)</span></h4><p>لتوضيح مسار البلاغ.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-vial" aria-hidden="true"></i><h4>المراجعات والاختبارات</h4><p>مراجعة الأكواد، اختبار الوحدات، اختبار التكامل، اختبار القبول.</p></article>
+      </div>
+
+      <h3 class="reveal">مثال: مخطط عظم السمكة لتأخر توجيه البلاغ</h3>
+      <div class="table-wrap figure-box reveal" tabindex="0">
+        <svg class="fishbone" viewBox="0 0 960 380" role="img" aria-label="مخطط عظم السمكة: أسباب تأخر توجيه البلاغ موزعة على الأشخاص والتقنية والإجراءات والبيانات">
+          <defs><marker id="fish-head" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="marker-normal"/></marker></defs>
+          <line x1="935" y1="190" x2="172" y2="190" class="spine" marker-end="url(#fish-head)"/>
+          <rect x="16" y="150" width="156" height="80" rx="10" class="fish-effect"/>
+          <text x="94" y="184" class="fish-effect-text">تأخر توجيه</text>
+          <text x="94" y="210" class="fish-effect-text">البلاغ</text>
+
+          <!-- الأشخاص -->
+          <line x1="770" y1="62" x2="690" y2="190" class="bone"/>
+          <rect x="705" y="28" width="130" height="34" rx="8" class="fish-cat"/><text x="770" y="51" class="fish-cat-text">الأشخاص</text>
+          <line x1="743" y1="105" x2="935" y2="105" class="twig"/><text x="839" y="98" class="fish-text">نقص الفنيين المتاحين</text>
+          <line x1="715" y1="150" x2="915" y2="150" class="twig"/><text x="815" y="143" class="fish-text">بطء قبول الفني للطلب</text>
+
+          <!-- التقنية -->
+          <line x1="470" y1="62" x2="390" y2="190" class="bone"/>
+          <rect x="405" y="28" width="130" height="34" rx="8" class="fish-cat"/><text x="470" y="51" class="fish-cat-text">التقنية</text>
+          <line x1="443" y1="105" x2="635" y2="105" class="twig"/><text x="539" y="98" class="fish-text">خلل في محرك التوجيه</text>
+          <line x1="415" y1="150" x2="615" y2="150" class="twig"/><text x="515" y="143" class="fish-text">تأخر وصول الإشعارات</text>
+
+          <!-- الإجراءات -->
+          <line x1="770" y1="318" x2="690" y2="190" class="bone"/>
+          <rect x="705" y="318" width="130" height="34" rx="8" class="fish-cat"/><text x="770" y="341" class="fish-cat-text">الإجراءات</text>
+          <line x1="715" y1="230" x2="915" y2="230" class="twig"/><text x="815" y="223" class="fish-text">قواعد إسناد غير واضحة</text>
+          <line x1="743" y1="275" x2="935" y2="275" class="twig"/><text x="839" y="268" class="fish-text">عدم تحديد أولوية البلاغ</text>
+
+          <!-- البيانات -->
+          <line x1="470" y1="318" x2="390" y2="190" class="bone"/>
+          <rect x="405" y="318" width="130" height="34" rx="8" class="fish-cat"/><text x="470" y="341" class="fish-cat-text">البيانات</text>
+          <line x1="415" y1="230" x2="615" y2="230" class="twig"/><text x="515" y="223" class="fish-text">تصنيف خاطئ للبلاغ</text>
+          <line x1="443" y1="275" x2="635" y2="275" class="twig"/><text x="539" y="268" class="fish-text">موقع الفني غير محدّث</text>
+        </svg>
+      </div>
+
+      <h3 class="reveal">مثال: مخطط باريتو لأنواع الأخطاء في الاختبار</h3>
+      <div class="figure-box reveal">
+        <p class="data-note"><i class="fa-solid fa-circle-info" aria-hidden="true"></i>بيانات توضيحية افتراضية لشرح الأداة، وليست نتائج اختبار فعلية.</p>
+        <div class="pareto-wrap"><canvas id="pareto-chart" role="img" aria-label="مخطط باريتو توضيحي: ستة أنواع من الأخطاء مرتبة تنازلياً مع النسبة التراكمية"></canvas></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7) البند السادس -->
+  <section id="risks" class="section">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">البند السادس</p><h2>المخاطر واستراتيجيات الرد</h2></div>
+      </header>
+
+      <h3 class="reveal">سجل المخاطر</h3>
+      <div class="table-wrap reveal" tabindex="0">
+        <table class="data-table risk-table">
+          <thead><tr><th>#</th><th class="wide">الخطر</th><th>الاحتمالية</th><th>الأثر</th><th>الدرجة</th><th>الاستراتيجية</th><th class="wide">الإجراء</th></tr></thead>
+          <tbody id="risk-body"></tbody>
+        </table>
+      </div>
+
+      <h3 class="reveal">مصفوفة الاحتمالية والأثر</h3>
+      <div class="matrix-wrap reveal">
+        <div class="matrix-y">الاحتمالية</div>
+        <div id="risk-matrix" class="matrix"></div>
+        <div class="matrix-x">الأثر</div>
+      </div>
+      <p class="muted matrix-note reveal">* أثر R4 "عالٍ جداً"، ووُضع في عمود الأثر الأعلى لأن المصفوفة 3×3، ولونه يتبع درجته "عالية" في السجل.</p>
+
+      <h3 class="reveal">استراتيجيات الرد على المخاطر السلبية</h3>
+      <div class="card-grid card-grid-4 reveal">
+        <article class="tool-card"><i class="fa-solid fa-ban" aria-hidden="true"></i><h4>التجنب <span class="en">(Avoid)</span></h4><p>تغيير الخطة لإزالة الخطر من أساسه. مثاله R1: تجميد المتطلبات بعد اعتمادها.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-right-left" aria-hidden="true"></i><h4>النقل <span class="en">(Transfer)</span></h4><p>تحويل أثر الخطر إلى طرف ثالث. مثاله R5: اتفاقية مستوى خدمة مع مزود الاستضافة.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i><h4>التخفيف <span class="en">(Mitigate)</span></h4><p>تقليل احتمالية الخطر أو أثره. مثاله R2: تخصيص أقوى المطورين ومراجعة أسبوعية.</p></article>
+        <article class="tool-card"><i class="fa-solid fa-handshake" aria-hidden="true"></i><h4>القبول <span class="en">(Accept)</span></h4><p>الإقرار بالخطر والتعامل معه إن وقع. مثاله R7: توثيق مستمر وتوزيع المعرفة بين الأعضاء.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8) البند السابع -->
+  <section id="comms" class="section section-alt">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-comments" aria-hidden="true"></i></span>
+        <div><p class="eyebrow">البند السابع</p><h2>خطة الاتصالات وعدد القنوات</h2></div>
+      </header>
+
+      <div class="channels-layout reveal">
+        <div id="stakeholders">
+          <h3>المعنيون في خطة الاتصالات <span class="muted">(n = 10)</span></h3>
+          <ol class="stakeholder-list">
+            <li>مديرة المشروع</li>
+            <li>محللة النظم والمتطلبات</li>
+            <li>مصممة الواجهات</li>
+            <li>مسؤولة التطوير والتقنية</li>
+            <li>مسؤولة الجودة والمخاطر</li>
+            <li>الراعي (مؤسس سندك / الممول)</li>
+            <li>ممثل العملاء التجريبيين (الشركات الناشئة)</li>
+            <li>ممثل الفنيين المتعاقدين</li>
+            <li>فريق التشغيل والدعم</li>
+            <li>مزودو الخدمات (الاستضافة السحابية وبوابة الدفع)</li>
+          </ol>
+        </div>
+        <div class="channels-side">
+          <h3>عدد قنوات الاتصال</h3>
+          <div class="equation">
+            <div dir="ltr" class="equation-math">n(n−1)/2 = 10 × 9 / 2 = <strong>45</strong></div>
+            <div class="equation-label">45 قناة اتصال</div>
+          </div>
+          <div id="channels-graph" class="channels-graph"></div>
+        </div>
+      </div>
+
+      <h3 class="reveal">مصفوفة خطة الاتصالات</h3>
+      <div class="table-wrap reveal" tabindex="0">
+        <table class="data-table text-table comm-table">
+          <thead><tr><th>ماذا (المعلومة)</th><th>لمن</th><th>الوسيلة</th><th>التكرار</th><th>المسؤول</th></tr></thead>
+          <tbody>
+            <tr><td>تقرير حالة المشروع (الجدول والتكلفة والمخاطر)</td><td>الراعي</td><td>تقرير مكتوب + اجتماع</td><td>شهرياً</td><td>مديرة المشروع</td></tr>
+            <tr><td>الاجتماع اليومي القصير</td><td>فريق المشروع</td><td>اجتماع حضوري أو عن بُعد</td><td>يومياً (15 دقيقة)</td><td>مديرة المشروع</td></tr>
+            <tr><td>مراجعة التقدم والمهام</td><td>فريق المشروع</td><td>اجتماع + أداة إدارة المهام</td><td>أسبوعياً</td><td>مديرة المشروع</td></tr>
+            <tr><td>اعتماد المتطلبات والتصاميم</td><td>الراعي + ممثل العملاء</td><td>ورشة عمل</td><td>عند نهاية كل مرحلة</td><td>محللة النظم</td></tr>
+            <tr><td>طلبات التغيير وقراراتها</td><td>مجلس التحكم بالتغييرات</td><td>نموذج طلب تغيير + اجتماع</td><td>عند الحاجة</td><td>مديرة المشروع</td></tr>
+            <tr><td>نتائج الاختبارات وتقارير الجودة</td><td>الفريق + الراعي</td><td>تقرير مكتوب</td><td>نهاية كل دورة اختبار</td><td>مسؤولة الجودة</td></tr>
+            <tr><td>تحديثات التكامل التقني</td><td>مزودو الخدمات</td><td>بريد إلكتروني + اجتماع</td><td>حسب الحاجة</td><td>مسؤولة التطوير</td></tr>
+            <tr><td>التدريب والإعلان عن الإطلاق</td><td>الفنيون + فريق التشغيل</td><td>ورش تدريبية + أدلة</td><td>قبل الإطلاق</td><td>مسؤولة الجودة + مصممة الواجهات</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9) الخاتمة -->
+  <section id="conclusion" class="section conclusion">
+    <div class="container">
+      <header class="section-head reveal">
+        <span class="section-icon"><i class="fa-solid fa-flag-checkered" aria-hidden="true"></i></span>
+        <h2>الخاتمة</h2>
+      </header>
+      <ul class="stats reveal">
+        <li><strong>32</strong><span>أسبوعاً</span></li>
+        <li><strong>500,000</strong><span>ريال</span></li>
+        <li><strong>8</strong><span>مخاطر مُدارة</span></li>
+        <li><strong>45</strong><span>قناة اتصال</span></li>
+      </ul>
+      <p class="lead reveal">يقدّم "سندك التقني" منصة تصل الشركات الناشئة والمؤسسات الفردية بالفني المختص، بخطة مدتها 32 أسبوعاً وميزانية 500,000 ريال، مع 8 مخاطر مُدارة و45 قناة اتصال. ويضمن تطبيق منهجية PMI ترابط عناصر المشروع وتحقيق أهدافه.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container"><i class="fa-solid fa-headset" aria-hidden="true"></i> سندك التقني · مشروع تطبيقي في إدارة مشروع نظم المعلومات</div>
+</footer>
+
+<a href="#cover" class="back-top" id="back-top" aria-label="العودة للأعلى" title="العودة للأعلى"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
+
+<script src="vendor/chartjs/chart.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
